@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI POEM GENERATOR</title>
 </head>
 <body>
@@ -12,15 +13,11 @@
     <h1>KOREAN POEM GENERATOR</h1>
 </header>
 <main>
-    <form>
-    <input type="text" placeholder="Enter topic of the Poem" class="instruction" autofocus required autocomplete="off"/>
-    <input type="submit" class="submit"/>
-</form>
-<div class="poem">
-    MWKNEKFFWJ
-    <br/>
-    anffmkfnsdvmzd
-</div>
+    <form id="form-generator">
+    <input  type="text" placeholder="Enter topic of the Poem" class="instruction" autofocus required autocomplete="off"/>
+    <input type="submit" class="submit-button" />
+    </form>
+<div class="poem" id="my-poem"></div>
 </main>
     <footer>
         This was coded by 
@@ -30,5 +27,6 @@
         <a href="https://korean-poem-generator-betinah.netlify.app" target="_blank">Netlify</a>
     </footer>
     </div>
+    <script src="src/index.js"></script>
 </body>
 </html>
